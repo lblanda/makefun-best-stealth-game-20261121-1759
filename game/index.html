@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Night Vault — a shadow-archive heist</title>
+<style>
+  html, body {
+    margin: 0;
+    padding: 0;
+    background: #05070c;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: monospace, monospace;
+  }
+  #wrap {
+    text-align: center;
+  }
+  canvas {
+    display: block;
+    width: 960px;
+    height: 640px;
+    image-rendering: pixelated;
+    background: #141824;
+    box-shadow: 0 0 60px rgba(64, 224, 255, 0.12);
+  }
+  #hint {
+    color: #8a93a8;
+    font-size: 12px;
+    margin-top: 10px;
+  }
+</style>
+</head>
+<body>
+<div id="wrap">
+  <canvas id="game" width="960" height="640"></canvas>
+  <div id="hint">WASD move &nbsp;·&nbsp; Shift run &nbsp;·&nbsp; C sneak &nbsp;·&nbsp; E take a core &nbsp;·&nbsp; click toss a coin &nbsp;·&nbsp; P pause &nbsp;·&nbsp; M mute</div>
+</div>
+<script type="module" src="./src/main.js"></script>
+</body>
+</html>
